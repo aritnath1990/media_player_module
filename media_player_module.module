@@ -18,5 +18,5 @@ function media_player_module_theme() {
  * Implements template_preprocess_media_file_formatter().
  */
 function template_preprocess_media_file_formatter(&$vars) {
-  template_preprocess_media_formatter($vars);
+ //template_preprocess_media_formatter($vars);
 }
