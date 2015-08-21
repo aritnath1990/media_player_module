@@ -7,8 +7,9 @@ use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Render\Element;
 
 
-/ * Implements hook_theme().
- */
+/** 
+* Implements hook_theme().
+*/
 function media_player_module_theme() {
   return array(
     'media_file_formatter' => array(
