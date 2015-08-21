@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains \Drupal\image_title_caption\Plugin\Field\FieldFormatter\ImageTitleCaption.
+ * Contains \Drupal\media_player_module\Plugin\Field\FieldFormatter\MediaFileFormatter.
  */
 
 namespace Drupal\media_player_module\Plugin\Field\FieldFormatter;
