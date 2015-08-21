@@ -8,16 +8,16 @@
 namespace Drupal\media_player_module\Plugin\Field\FieldFormatter;
 
 use Drupal\Core\Field\FieldItemListInterface;
-use Drupal\file\Plugin\Field\FieldFormatter;
+use Drupal\file\Plugin\Field\FieldFormatter\GenericFileFormatter;
 
 /**
  * Plugin implementation of the 'image_title_caption' formatter.
  *
  * @FieldFormatter(
- *   id = "image_title_caption",
- *   label = @Translation("Image with caption from title"),
+ *   id = "media_player_module",
+ *   label = @Translation("Media File Formatter"),
  *   field_types = {
- *     "image"
+ *     "file"
  *   }
  * )
  */
