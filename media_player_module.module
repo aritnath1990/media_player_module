@@ -1,7 +1,7 @@
 <?php
 
 use Drupal\Component\Utility\Html;
-use \Drupal\Core\Entity\Entity;
+use Drupal\Core\Entity\Entity;
 use Drupal\file\Entity\File;
 use Drupal\Component\Utility\SafeMarkup;
 use Drupal\Core\Render\Element;
