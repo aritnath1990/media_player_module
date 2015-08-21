@@ -2,5 +2,3 @@ name: Media Player Module
 type: module
 description: create a custom media formatter
 core: 8.x
-dependencies:
-    - file
