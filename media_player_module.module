@@ -13,7 +13,7 @@ use Drupal\Core\Render\Element;
 function media_player_module_theme() {
   return array(
     'media_file_formatter' => array(
-      'variables' => array('item' => NULL, 'item_attributes' => NULL, 'url' => NULL),
+      'variables' => array('file' => NULL, 'description' => NULL, 'attributes' => array()),
     ),
   );
 }
