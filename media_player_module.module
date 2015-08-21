@@ -1,9 +1,13 @@
 <?php
 
+use Drupal\Component\Utility\Html;
+\Drupal\Core\Entity\Entity;
+use Drupal\file\Entity\File;
 use Drupal\Component\Utility\SafeMarkup;
+use Drupal\Core\Render\Element;
 
-/**
- * Implements hook_theme().
+
+/ * Implements hook_theme().
  */
 function media_player_module_theme() {
   return array(
@@ -18,5 +22,12 @@ function media_player_module_theme() {
  * Implements template_preprocess_media_file_formatter().
  */
 function template_preprocess_media_file_formatter(&$vars) {
- //template_preprocess_media_formatter($vars);
+ //template_preprocess_file_link($vars);
+
+  $file = $vars['file'];
+  $options = array();
+
+  $file_entity = ($file instanceof File) ? $file : File::load($file->fid);
+  $url = file_create_url($file_entity->getFileUri());
+  $vars['media_link'] = $url;
 }
