@@ -24,11 +24,12 @@ function media_player_module_theme() {
  */
 function template_preprocess_media_file_formatter(&$vars) {
  //template_preprocess_file_link($vars);
-  var_dump($vars);die("HELLO");
   $file = $vars['file'];
   $options = array();
 
   $file_entity = ($file instanceof File) ? $file : File::load($file->fid);
+  print_r($file_entity);
   $url = file_create_url($file_entity->getFileUri());
+  var_dump($url);die("HELLO");
   $vars['media_link'] = $url;
 }
